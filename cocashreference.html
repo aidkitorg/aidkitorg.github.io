@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>EMPLOYMENT REFERENCE FORM</title>
+    <meta charset="UTF-8">
+  </head>
+<body>
+  <center><h3>EMPLOYMENT REFERENCE FORM</h3></center>
+  <center><h3>COVID Assistance Program</h3></center>
+
+  <center><h3>COVID Assistance Program</h3></center>
+
+<p>This verification of employment form is request by the following applicant:</p>
+<p>Name of applicant: <b>{{legal_name}}</b></p>
+<p>Phone of applicant: <b>{{phone_number}}</b></p>
+
+<p>TO WHOM IT MAY CONCERN:</p>
+<p>The applicant/participant, {{legal_name}} is applying for COVID assistance through a program at Impact Charitable (5013c) funded by the Colorado Department of Local Affairs. The program requires that information related to the applicant’s employment history be verified by a trusted reference. Please confirm and attest that the information as it applies to the above named applicant. Be assured that your reply will be kept confidential. Please complete this form within the next 3 business days so the applicant can receive this assistance.</p>
+
+<p>If you have any questions, please contact ({{screener_name}} {{screener_contact}})</p>
+
+<p>REFERENCE INFORMATION:</p>
+
+<ul>
+<li>Reference Name: <b>{{reference_name}}</b></li>
+<li>Reference Phone Number: <b>{{reference_phone}}</b></li>
+{{#reference_organization}}
+<li>Reference Organization: <b>{{reference_organization}}</b></li>
+{{/reference_organization}}
+<li>Reference Relationship to Applicant: <b>{{reference_relationship_employer}}</b></li>
+</ul>
+
+<p>APPLICANT EMPLOYMENT HISTORY:</p>
+
+<ul>
+<li>Company Name: <b>{{company_name}}</b></li>
+<li>Applicant worked for 20+ hours for a duration of 2 weeks or longer</li>
+<li>Applicant experienced job loss/work hour reduction of 20+ hours  for a duration of 2 weeks or longer
+  <ul>
+    <li>Start Date of employment/work pay period before experiencing job loss: {{employment_start_date}}</li>
+    <li>Start Date of employment job loss/work hour reduction: {{job_loss_start_date}}</li>
+    {{#job_loss_end_date}}
+    <li>End Date of employment job loss/work hour reduction: {{job_loss_end_date}}</li>
+    {{/job_loss_end_date}}
+  </ul>
+</li>
+</ul>
+
+<p>REFERENCE ELECTRONIC SIGNATURE:</p>
+<p>By signing this form you certify that you believe this information is accurate and complete to the best of your knowledge. Further, you provide consent to a program staff member to follow up, if necessary, to gather any additional information on the applicant’s employment history. Thank you for completing this reference form and helping the applicant apply for this assistance!</p>
+</body>
+</html>

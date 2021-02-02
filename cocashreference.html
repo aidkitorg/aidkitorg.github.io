@@ -45,5 +45,50 @@
 
 <p>REFERENCE ELECTRONIC SIGNATURE:</p>
 <p>By signing this form you certify that you believe this information is accurate and complete to the best of your knowledge. Further, you provide consent to a program staff member to follow up, if necessary, to gather any additional information on the applicant’s employment history. Thank you for completing this reference form and helping the applicant apply for this assistance!</p>
-</body>
+
+  
+  <center><h3>FORMULARIO DE REFERENCIA DE EMPLEO</h3></center>
+  <center><h3>Programa de asistencia COVID</h3></center>
+
+<p>Este formulario de verificación de empleo es solicitado por el siguiente solicitante:</p>
+<p>Nombre del solicitante: <b>{{legal_name}}</b></p>
+<p>Número de teléfono del solicitante: <b>{{phone_number}}</b></p>
+
+<p>A quien corresponda:</p>
+<p>El solicitante / participante, {{legal_name}}está solicitando asistencia de COVID a través de un programa en Impact Charitable (5013c) que es financiado por el Departamento de Asuntos Locales de Colorado. El programa requiere que la información relacionada con el historial laboral del solicitante sea verificada por una referencia confiable. Por favor, confirme si la información siguiente aplica al solicitante mencionado anteriormente. Tenga la seguridad de que su respuesta se mantendrá confidencial. Complete este formulario dentro de los próximos 3 días hábiles para que el solicitante pueda recibir esta asistencia.</p>
+
+<p>Si tiene alguna pregunta, comuníquese con el evaluador del programa asignado a este solicitante: ({{screener_name}} {{screener_contact}})</p>
+
+<p>INFORMACIÓN DE REFERENCIA:</p>
+
+<ul>
+<li>Nombre de referencia: <b>{{reference_name}}</b></li>
+<li>Número de teléfono de referencia: <b>{{reference_phone}}</b></li>
+{{#reference_organization}}
+<li>Organización de referencia (si aplica)<b>{{reference_organization}}</b></li>
+{{/reference_organization}}
+<li>Relación con el solicitante (casilla de verificación): <b>{{reference_relationship_employer}}</b></li>
+</ul>
+
+<p>HISTORIAL DE EMPLEO DEL SOLICITANTE:</p>
+
+<ul>
+<li>Nombre de la empresa o empleador <b>{{company_name}}</b></li>
+<li>El solicitante trabajó durante más de 20 horas por una duración de 2 semanas o más
+</li>
+<li>El solicitante experimentó pérdida de empleo / reducción de horas de trabajo de más de 20 horas por una duración de 2 semanas o más
+  <ul>
+    <li>Fecha cuando el empleado inició el empleo / trabajo antes de perder el trabajo: {{employment_start_date}}</li>
+    <li>Fecha cuando inicio la  pérdida del empleo o reducción de horas de trabajo: {{job_loss_start_date}}</li>
+    {{#job_loss_end_date}}
+    <li>Fecha de pérdida de trabajo o reducción de horas de trabajo: {{job_loss_end_date}}</li>
+    {{/job_loss_end_date}}
+  </ul>
+</li>
+</ul>
+
+<p>FIRMA ELECTRÓNICA DE REFERENCIA:</p>
+<p>Al firmar este formulario, usted certifica que esta información es precisa y completa a su leal saber y entender.  Adicionalmente, usted da su consentimiento para que un miembro del personal del programa pueda dar seguimiento a este proceso y recopilar cualquier información adicional sobre el historial laboral del solicitante al ser necesario. ¡Gracias por completar este formulario de referencia y ayudar al aplicante a solicitar esta asistencia!</p>
+
+  </body>
 </html>

@@ -1,4 +1,3 @@
-
 <meta charset="UTF-8" />
 <center>
   <h2>Left Behind Workers Fund (LBWF) Emergency Rental Assistance Agreement</h2>
@@ -30,6 +29,12 @@
   This Agreement shall constitute an addendum to the current lease agreement
   between OWNER and TENANT,
 </p>
+
+{{#show_landlord_template}}
+<p>
+  I {{property_owner}}, rent to {{legal_name}}, a property at {{home_address}} for an amount of {{monthly_rent}}
+</p>
+{{/show_landlord_template}}
 
 <p>For good and valuable consideration, the OWNER agrees as follows:</p>
 
@@ -70,100 +75,283 @@
           <td></td>
           <th>Month</th>
           <th>Due</th>
-          <th>Late Fees</th>
+          <th>Utilities</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        {{#unpaid_march}}
-        <tr>
-          <td></td>
-          <td>March</td>
-          <td>${{unpaid_march}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_march}} {{#unpaid_april}}
-        <tr>
-          <td></td>
-          <td>April</td>
-          <td>${{unpaid_april}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_april}} {{#unpaid_may}}
-        <tr>
-          <td></td>
-          <td>May</td>
-          <td>${{unpaid_may}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_may}} {{#unpaid_june}}
-        <tr>
-          <td></td>
-          <td>June</td>
-          <td>${{unpaid_june}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_june}} {{#unpaid_july}}
-        <tr>
-          <td></td>
-          <td>July</td>
-          <td>${{unpaid_july}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_july}} {{#unpaid_august}}
-        <tr>
-          <td></td>
-          <td>August</td>
-          <td>${{unpaid_august}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_august}} {{#unpaid_september}}
-        <tr>
-          <td></td>
-          <td>September</td>
-          <td>${{unpaid_september}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_september}} {{#unpaid_october}}
-        <tr>
-          <td></td>
-          <td>October</td>
-          <td>${{unpaid_october}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_october}} {{#unpaid_november}}
-        <tr>
-          <td></td>
-          <td>November</td>
-          <td>${{unpaid_november}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_november}} {{#unpaid_december}}
-        <tr>
-          <td></td>
-          <td>December</td>
-          <td>${{unpaid_december}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_december}} {{#unpaid_january}}
-        <tr>
-          <td></td>
-          <td>January</td>
-          <td>${{unpaid_january}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_january}}
+        
+        {{#show_april_2020}}
+        {{#unpaid_april_2020}}
+            <tr>
+              <td></td>
+              <td>April 2020</td>
+              <td>${{unpaid_april_2020}}</td>
+              <td>${{util_april_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_april_2020}}
+        {{/show_april_2020}}
+
+
+        {{#show_may_2020}}
+        {{#unpaid_may_2020}}
+            <tr>
+              <td></td>
+              <td>May 2020</td>
+              <td>${{unpaid_may_2020}}</td>
+              <td>${{util_may_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_may_2020}}
+        {{/show_may_2020}}
+
+
+        {{#show_june_2020}}
+        {{#unpaid_june_2020}}
+            <tr>
+              <td></td>
+              <td>June 2020</td>
+              <td>${{unpaid_june_2020}}</td>
+              <td>${{util_june_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_june_2020}}
+        {{/show_june_2020}}
+
+
+        {{#show_july_2020}}
+        {{#unpaid_july_2020}}
+            <tr>
+              <td></td>
+              <td>July 2020</td>
+              <td>${{unpaid_july_2020}}</td>
+              <td>${{util_july_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_july_2020}}
+        {{/show_july_2020}}
+
+
+        {{#show_aug_2020}}
+        {{#unpaid_august_2020}}
+            <tr>
+              <td></td>
+              <td>August 2020</td>
+              <td>${{unpaid_august_2020}}</td>
+              <td>${{util_august_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_august_2020}}
+        {{/show_aug_2020}}
+
+
+        {{#show_sept_2020}}
+        {{#unpaid_september_2020}}
+            <tr>
+              <td></td>
+              <td>September 2020</td>
+              <td>${{unpaid_september_2020}}</td>
+              <td>${{util_september_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_september_2020}}
+        {{/show_sept_2020}}
+
+
+        {{#show_oct_2020}}
+        {{#unpaid_october_2020}}
+            <tr>
+              <td></td>
+              <td>October 2020</td>
+              <td>${{unpaid_october_2020}}</td>
+              <td>${{util_october_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_october_2020}}
+        {{/show_oct_2020}}
+
+
+        {{#show_nov_2020}}
+        {{#unpaid_november_2020}}
+            <tr>
+              <td></td>
+              <td>November 2020</td>
+              <td>${{unpaid_november_2020}}</td>
+              <td>${{util_november_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_november_2020}}
+        {{/show_nov_2020}}
+
+
+        {{#show_dec_2020}}
+        {{#unpaid_december_2020}}
+            <tr>
+              <td></td>
+              <td>December 2020</td>
+              <td>${{unpaid_december_2020}}</td>
+              <td>${{util_december_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_december_2020}}
+        {{/show_dec_2020}}
+
+
+        {{#show_jan_2021}}
+        {{#unpaid_jan_2021}}
+            <tr>
+              <td></td>
+              <td>January 2021</td>
+              <td>${{unpaid_jan_2021}}</td>
+              <td>${{util_jan_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_jan_2021}}
+        {{/show_jan_2021}}
+
+
+        {{#show_feb_2021}}
+        {{#unpaid_feb_2021}}
+            <tr>
+              <td></td>
+              <td>February 2021</td>
+              <td>${{unpaid_feb_2021}}</td>
+              <td>${{util_feb_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_feb_2021}}
+        {{/show_feb_2021}}
+
+
+        {{#show_mar_2021}}
+        {{#unpaid_mar_2021}}
+            <tr>
+              <td></td>
+              <td>March 2021</td>
+              <td>${{unpaid_mar_2021}}</td>
+              <td>${{util_mar_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_mar_2021}}
+        {{/show_mar_2021}}
+
+
+        {{#show_apr_2021}}
+        {{#unpaid_april_2021}}
+            <tr>
+              <td></td>
+              <td>April 2021</td>
+              <td>${{unpaid_april_2021}}</td>
+              <td>${{util_april_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_april_2021}}
+        {{/show_apr_2021}}
+
+
+        {{#show_may_2021}}
+        {{#unpaid_may_2021}}
+            <tr>
+              <td></td>
+              <td>May 2021</td>
+              <td>${{unpaid_may_2021}}</td>
+              <td>${{util_may_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_may_2021}}
+        {{/show_may_2021}}
+
+
+        {{#show_jun_2021}}
+        {{#unpaid_june_2021}}
+            <tr>
+              <td></td>
+              <td>June 2021</td>
+              <td>${{unpaid_june_2021}}</td>
+              <td>${{util_june_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_june_2021}}
+        {{/show_jun_2021}}
+
+
+        {{#show_july_2021}}
+        {{#unpaid_july_2021}}
+            <tr>
+              <td></td>
+              <td>July 2021</td>
+              <td>${{unpaid_july_2021}}</td>
+              <td>${{util_july_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_july_2021}}
+        {{/show_july_2021}}
+
+
+        {{#show_aug_2021}}
+        {{#unpaid_august_2021}}
+            <tr>
+              <td></td>
+              <td>August 2021</td>
+              <td>${{unpaid_august_2021}}</td>
+              <td>${{util_august_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_august_2021}}
+        {{/show_aug_2021}}
+
+
+        {{#show_sept_2021}}
+        {{#unpaid_september_2021}}
+            <tr>
+              <td></td>
+              <td>September 2021</td>
+              <td>${{unpaid_september_2021}}</td>
+              <td>${{util_september_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_september_2021}}
+        {{/show_sept_2021}}
+
+
+        {{#show_oct_2021}}
+        {{#unpaid_october_2021}}
+            <tr>
+              <td></td>
+              <td>October 2021</td>
+              <td>${{unpaid_october_2021}}</td>
+              <td>${{util_october_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_october_2021}}
+        {{/show_oct_2021}}
+
+
+        {{#show_nov_2021}}
+        {{#unpaid_november_2021}}
+            <tr>
+              <td></td>
+              <td>November 2021</td>
+              <td>${{unpaid_november_2021}}</td>
+              <td>${{util_november_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_november_2021}}
+        {{/show_nov_2021}}
+
+
+        {{#show_dec_2021}}
+        {{#unpaid_december_2021}}
+            <tr>
+              <td></td>
+              <td>December 2021</td>
+              <td>${{unpaid_december_2021}}</td>
+              <td>${{util_december_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_december_2021}}
+        {{/show_dec_2021}}
 
         <tr>
           <th>Total Due</th>
@@ -352,6 +540,12 @@
   INQUILINO.
 </p>
 
+{{#show_landlord_template}}
+<p>
+  I {{property_owner}}, rent to {{legal_name}}, a property at {{home_address}} for an amount of {{monthly_rent}}
+</p>
+{{/show_landlord_template}}
+
 <p>
   Para bien y consideración de valor, el dueño está de acuerdo en lo siguiente:
 </p>
@@ -378,95 +572,277 @@
         </tr>
       </thead>
       <tbody>
-        {{#unpaid_march}}
-        <tr>
-          <td></td>
-          <td>March</td>
-          <td>${{unpaid_march}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_march}} {{#unpaid_april}}
-        <tr>
-          <td></td>
-          <td>April</td>
-          <td>${{unpaid_april}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_april}} {{#unpaid_may}}
-        <tr>
-          <td></td>
-          <td>May</td>
-          <td>${{unpaid_may}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_may}} {{#unpaid_june}}
-        <tr>
-          <td></td>
-          <td>June</td>
-          <td>${{unpaid_june}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_june}} {{#unpaid_july}}
-        <tr>
-          <td></td>
-          <td>July</td>
-          <td>${{unpaid_july}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_july}} {{#unpaid_august}}
-        <tr>
-          <td></td>
-          <td>August</td>
-          <td>${{unpaid_august}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_august}} {{#unpaid_september}}
-        <tr>
-          <td></td>
-          <td>September</td>
-          <td>${{unpaid_september}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_september}} {{#unpaid_october}}
-        <tr>
-          <td></td>
-          <td>October</td>
-          <td>${{unpaid_october}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_october}} {{#unpaid_november}}
-        <tr>
-          <td></td>
-          <td>November</td>
-          <td>${{unpaid_november}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_november}} {{#unpaid_december}}
-        <tr>
-          <td></td>
-          <td>December</td>
-          <td>${{unpaid_december}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_december}} {{#unpaid_january}}
-        <tr>
-          <td></td>
-          <td>January</td>
-          <td>${{unpaid_january}}</td>
-          <td></td>
-          <td></td>
-        </tr>
-        {{/unpaid_january}}
+        {{#show_april_2020}}
+        {{#unpaid_april_2020}}
+            <tr>
+              <td></td>
+              <td>April 2020</td>
+              <td>${{unpaid_april_2020}}</td>
+              <td>${{util_april_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_april_2020}}
+        {{/show_april_2020}}
+
+
+        {{#show_may_2020}}
+        {{#unpaid_may_2020}}
+            <tr>
+              <td></td>
+              <td>May 2020</td>
+              <td>${{unpaid_may_2020}}</td>
+              <td>${{util_may_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_may_2020}}
+        {{/show_may_2020}}
+
+
+        {{#show_june_2020}}
+        {{#unpaid_june_2020}}
+            <tr>
+              <td></td>
+              <td>June 2020</td>
+              <td>${{unpaid_june_2020}}</td>
+              <td>${{util_june_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_june_2020}}
+        {{/show_june_2020}}
+
+
+        {{#show_july_2020}}
+        {{#unpaid_july_2020}}
+            <tr>
+              <td></td>
+              <td>July 2020</td>
+              <td>${{unpaid_july_2020}}</td>
+              <td>${{util_july_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_july_2020}}
+        {{/show_july_2020}}
+
+
+        {{#show_aug_2020}}
+        {{#unpaid_august_2020}}
+            <tr>
+              <td></td>
+              <td>August 2020</td>
+              <td>${{unpaid_august_2020}}</td>
+              <td>${{util_august_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_august_2020}}
+        {{/show_aug_2020}}
+
+
+        {{#show_sept_2020}}
+        {{#unpaid_september_2020}}
+            <tr>
+              <td></td>
+              <td>September 2020</td>
+              <td>${{unpaid_september_2020}}</td>
+              <td>${{util_september_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_september_2020}}
+        {{/show_sept_2020}}
+
+
+        {{#show_oct_2020}}
+        {{#unpaid_october_2020}}
+            <tr>
+              <td></td>
+              <td>October 2020</td>
+              <td>${{unpaid_october_2020}}</td>
+              <td>${{util_october_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_october_2020}}
+        {{/show_oct_2020}}
+
+
+        {{#show_nov_2020}}
+        {{#unpaid_november_2020}}
+            <tr>
+              <td></td>
+              <td>November 2020</td>
+              <td>${{unpaid_november_2020}}</td>
+              <td>${{util_november_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_november_2020}}
+        {{/show_nov_2020}}
+
+
+        {{#show_dec_2020}}
+        {{#unpaid_december_2020}}
+            <tr>
+              <td></td>
+              <td>December 2020</td>
+              <td>${{unpaid_december_2020}}</td>
+              <td>${{util_december_2020}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_december_2020}}
+        {{/show_dec_2020}}
+
+
+        {{#show_jan_2021}}
+        {{#unpaid_jan_2021}}
+            <tr>
+              <td></td>
+              <td>January 2021</td>
+              <td>${{unpaid_jan_2021}}</td>
+              <td>${{util_jan_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_jan_2021}}
+        {{/show_jan_2021}}
+
+
+        {{#show_feb_2021}}
+        {{#unpaid_feb_2021}}
+            <tr>
+              <td></td>
+              <td>February 2021</td>
+              <td>${{unpaid_feb_2021}}</td>
+              <td>${{util_feb_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_feb_2021}}
+        {{/show_feb_2021}}
+
+
+        {{#show_mar_2021}}
+        {{#unpaid_mar_2021}}
+            <tr>
+              <td></td>
+              <td>March 2021</td>
+              <td>${{unpaid_mar_2021}}</td>
+              <td>${{util_mar_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_mar_2021}}
+        {{/show_mar_2021}}
+
+
+        {{#show_apr_2021}}
+        {{#unpaid_april_2021}}
+            <tr>
+              <td></td>
+              <td>April 2021</td>
+              <td>${{unpaid_april_2021}}</td>
+              <td>${{util_april_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_april_2021}}
+        {{/show_apr_2021}}
+
+
+        {{#show_may_2021}}
+        {{#unpaid_may_2021}}
+            <tr>
+              <td></td>
+              <td>May 2021</td>
+              <td>${{unpaid_may_2021}}</td>
+              <td>${{util_may_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_may_2021}}
+        {{/show_may_2021}}
+
+
+        {{#show_jun_2021}}
+        {{#unpaid_june_2021}}
+            <tr>
+              <td></td>
+              <td>June 2021</td>
+              <td>${{unpaid_june_2021}}</td>
+              <td>${{util_june_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_june_2021}}
+        {{/show_jun_2021}}
+
+
+        {{#show_july_2021}}
+        {{#unpaid_july_2021}}
+            <tr>
+              <td></td>
+              <td>July 2021</td>
+              <td>${{unpaid_july_2021}}</td>
+              <td>${{util_july_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_july_2021}}
+        {{/show_july_2021}}
+
+
+        {{#show_aug_2021}}
+        {{#unpaid_august_2021}}
+            <tr>
+              <td></td>
+              <td>August 2021</td>
+              <td>${{unpaid_august_2021}}</td>
+              <td>${{util_august_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_august_2021}}
+        {{/show_aug_2021}}
+
+
+        {{#show_sept_2021}}
+        {{#unpaid_september_2021}}
+            <tr>
+              <td></td>
+              <td>September 2021</td>
+              <td>${{unpaid_september_2021}}</td>
+              <td>${{util_september_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_september_2021}}
+        {{/show_sept_2021}}
+
+
+        {{#show_oct_2021}}
+        {{#unpaid_october_2021}}
+            <tr>
+              <td></td>
+              <td>October 2021</td>
+              <td>${{unpaid_october_2021}}</td>
+              <td>${{util_october_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_october_2021}}
+        {{/show_oct_2021}}
+
+
+        {{#show_nov_2021}}
+        {{#unpaid_november_2021}}
+            <tr>
+              <td></td>
+              <td>November 2021</td>
+              <td>${{unpaid_november_2021}}</td>
+              <td>${{util_november_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_november_2021}}
+        {{/show_nov_2021}}
+
+
+        {{#show_dec_2021}}
+        {{#unpaid_december_2021}}
+            <tr>
+              <td></td>
+              <td>December 2021</td>
+              <td>${{unpaid_december_2021}}</td>
+              <td>${{util_december_2021}}</td>
+              <td></td>
+            </tr>
+        {{/unpaid_december_2021}}
+        {{/show_dec_2021}}
 
         <tr>
           <th>Total debido</th>
@@ -597,4 +973,3 @@
   Inquilino entiende que cualquier declaración u omisión falsa o engañosa puede resultar en acciones penales y civiles por multas, sanciones, daños o penas.
 </p>
 {{/include_cdc}}
-

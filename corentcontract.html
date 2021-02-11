@@ -76,7 +76,7 @@
           <th>Month</th>
           <th>Due</th>
           <th>Utilities</th>
-          <th></th>
+          <th>Late Fees</th>
         </tr>
       </thead>
       <tbody>
@@ -357,6 +357,7 @@
           <th>Total Due</th>
           <td></td>
           <td>${{total_paid}}</td>
+          <td></td>
           <td>${{late_fees_total}}{{^late_fees_total}}0{{/late_fees_total}}</td>
         </tr>
         <tr>
@@ -369,10 +370,12 @@
           <th>Paid by TENANT</th>
           <td></td>
           <td></td>
+          <td></td>
           <td>${{tenant_paid}}</td>
         </tr>
         <tr>
           <th>Waived by OWNER</th>
+          <td></td>
           <td></td>
           <td></td>
           <td>${{owner_waived}}</td>
@@ -567,8 +570,8 @@
           <td></td>
           <th>Mes</th>
           <th>Debido</th>
+          <th>Utilities</th>
           <th>Cuotas atrasadas</th>
-          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -848,6 +851,7 @@
           <th>Total debido</th>
           <td></td>
           <td>${{total_paid}}</td>
+          <td></td>
           <td>${{late_fees_total}}{{^late_fees_total}}0{{/late_fees_total}}</td>
         </tr>
         <tr>
@@ -860,10 +864,12 @@
           <th>Pagado por inquilino</th>
           <td></td>
           <td></td>
+          <td></td>
           <td>${{tenant_paid}}</td>
         </tr>
         <tr>
           <th>Renunciado por propietario</th>
+          <td></td>
           <td></td>
           <td></td>
           <td>${{owner_waived}}</td>

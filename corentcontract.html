@@ -1,0 +1,600 @@
+
+<meta charset="UTF-8" />
+<center>
+  <h2>Left Behind Workers Fund (LBWF) Emergency Rental Assistance Agreement</h2>
+</center>
+
+<p>
+  PROPERTY OWNER(S)/LANDLORD<br />
+  Name: {{property_owner}}<br />
+  Address: {{property_manager_address}}<br />
+  Telephone: {{property_phone}}<br />
+</p>
+
+<p>
+  TENANT<br />
+  Name: {{legal_name}}<br />
+  Address: {{home_address}}<br />
+  Telephone: {{phone_number}}<br />
+</p>
+
+<p>
+  This EMERGENCY RENTAL ASSISTANCE AGREEMENT (this “Agreement”) is made and
+  entered into on {{date}} (the “Effective Date”), by and between PROPERTY
+  OWNER/LANDLORD (“OWNER”) and TENANT.
+</p>
+
+<p>
+  Owner and Tenant have entered into a rental agreement, written or oral, in
+  which the tenant pays ${{monthly_rent}} per month in rent (“Lease Agreement”).
+  This Agreement shall constitute an addendum to the current lease agreement
+  between OWNER and TENANT,
+</p>
+
+<p>For good and valuable consideration, the OWNER agrees as follows:</p>
+
+<style>
+  table,
+  th,
+  td {
+    border: 0px;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+  td,
+  th {
+    text-align: right;
+    padding-right: 20px;
+  }
+  .b {
+    border: 1px solid black !important;
+  }
+  th {
+    font-weight: bold;
+  }
+</style>
+
+<ol>
+  <li>
+    <p>
+      OWNER will accept payment from LBWF on behalf of the tenant of the total
+      amount of monthly rent owed by TENANT for the following month(s) (below) in the
+      total amount of ${{total_paid}} and upon the timely receipt of the payment
+      from LBWF (as provided in paragraph 7 of this agreement), will release
+      TENANT from liability to OWNER for this portion of rent owed for the
+      stated month(s).
+    </p>
+    <table border="1">
+      <thead>
+        <tr>
+          <td></td>
+          <th>Month</th>
+          <th>Due</th>
+          <th>Late Fees</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#unpaid_march}}
+        <tr>
+          <td></td>
+          <td>March</td>
+          <td>${{unpaid_march}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_march}} {{#unpaid_april}}
+        <tr>
+          <td></td>
+          <td>April</td>
+          <td>${{unpaid_april}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_april}} {{#unpaid_may}}
+        <tr>
+          <td></td>
+          <td>May</td>
+          <td>${{unpaid_may}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_may}} {{#unpaid_june}}
+        <tr>
+          <td></td>
+          <td>June</td>
+          <td>${{unpaid_june}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_june}} {{#unpaid_july}}
+        <tr>
+          <td></td>
+          <td>July</td>
+          <td>${{unpaid_july}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_july}} {{#unpaid_august}}
+        <tr>
+          <td></td>
+          <td>August</td>
+          <td>${{unpaid_august}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_august}} {{#unpaid_september}}
+        <tr>
+          <td></td>
+          <td>September</td>
+          <td>${{unpaid_september}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_september}} {{#unpaid_october}}
+        <tr>
+          <td></td>
+          <td>October</td>
+          <td>${{unpaid_october}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_october}} {{#unpaid_november}}
+        <tr>
+          <td></td>
+          <td>November</td>
+          <td>${{unpaid_november}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_november}} {{#unpaid_december}}
+        <tr>
+          <td></td>
+          <td>December</td>
+          <td>${{unpaid_december}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_december}} {{#unpaid_january}}
+        <tr>
+          <td></td>
+          <td>January</td>
+          <td>${{unpaid_january}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_january}}
+
+        <tr>
+          <th>Total Due</th>
+          <td></td>
+          <td>${{total_paid}}</td>
+          <td>${{late_fees_total}}{{^late_fees_total}}0{{/late_fees_total}}</td>
+        </tr>
+        <tr>
+          <th>Paid by LBWF</th>
+          <td></td>
+          <td>${{total_paid}}</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Paid by TENANT</th>
+          <td></td>
+          <td></td>
+          <td>${{tenant_paid}}</td>
+        </tr>
+        <tr>
+          <th>Waived by OWNER</th>
+          <td></td>
+          <td></td>
+          <td>${{owner_waived}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </li>
+
+  <li>
+    <p>
+      OWNER will waive all late fees over $100.00 in total for late fees that
+      would have accrued under the terms of the original Lease Agreement between
+      OWNER and TENANT beginning on the first day the rent would have been late
+    </p>
+  </li>
+
+  <li>
+    <p>
+      OWNER will take action to terminate any current eviction proceedings
+      and/or not begin eviction proceedings that are or would be based on the
+      rental payments covered by this payment or any fees associated with the
+      non or late payment of rent covered by these payments. If a notice of
+      evictions has been served, Owner will provide proof of the termination of
+      any ongoing eviction proceeding prior to payment being issued.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      The OWNER certifies that they have not received payment for the rental
+      payments covered by this agreement from the tenant or any other third
+      party (we require that any duplicate payments be returned).
+    </p>
+  </li>
+
+  <li>
+    <p>
+      If an Owner Agent Signs this document, they certify that they are
+      authorized to sign on behalf of the Owner.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      This Agreement shall be effective on the date that the second party
+      executes the Agreement.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      LBWF will issue a check or ACH transfer for full payment within 10 days of
+      the signing of this agreement.
+    </p>
+  </li>
+
+  {{#has30DayClause}}
+  <li>
+    <p>
+      For the month following that for which rent was paid by the LBWF, owner
+      agrees to provide the tenant with at least thirty (30) days’ notice of any
+      default for non-payment of rent or fees before serving a Notice of
+      Eviction.
+    </p>
+  </li>
+  {{/has30DayClause}}
+
+  <li>
+    <p>
+      The TENANT will be responsible for making rent payments according to the
+      terms of the Lease Agreement moving forward.
+    </p>
+  </li>
+</ol>
+
+{{#include_cdc}}
+<p>
+  Further, TENANT certifies under penalty of perjury, pursuant to 28 U.S.C
+  Section 1746, that the foregoing are true and correct:
+</p>
+<ul>
+  <li>
+    TENANT has used best efforts to obtain all available government assistance
+    for rent or housing;
+  </li>
+  <li>
+    TENANT either expects to earn no more than $99,000 in annual income for
+    Calendar Year 2020 (or no more than $198,000 if filing a joint tax return),
+    was not required to report any income in 2019 to the U.S. Internal Revenue
+    Service, or received an Economic Impact Payment (stimulus check) pursuant to
+    Section 2201 of the CARES Act;
+  </li>
+  <li>
+    TENANT is unable to pay my full rent or make a full housing payment due to
+    substantial loss of household income, loss of compensable hours of work or
+    wages, lay-offs, or extraordinary2 out-of-pocket medical expenses;
+  </li>
+  <li>
+    TENANT is using best efforts to make timely partial payments that are as
+    close to the full payment as the individual’s circumstances may permit,
+    taking into account other nondiscretionary expenses;
+  </li>
+  <li>
+    If evicted TENANT would likely become homeless, need to move into a homeless
+    shelter, or need to move into a new residence shared by other people who
+    live in close quarters because TENANT has no other available housing
+    options.
+  </li>
+  <li>
+    TENANT understand that TENANT must still pay rent or make a housing payment,
+    and comply with other obligations that they may have under their tenancy,
+    lease agreement, or similar contract. TENANT further understand that fees,
+    penalties, or interest for not paying rent or making a housing payment on
+    time as required by their tenancy, lease agreement, or similar contract may
+    still be charged or collected.
+  </li>
+  <li>
+    TENANT further understand that at the end of this temporary halt on
+    evictions on December 31, 2020, their housing provider may require payment
+    in full for all payments not made prior to and during the temporary halt and
+    failure to pay may make them subject to eviction pursuant to state and local
+    laws.
+  </li>
+</ul>
+<p>
+  TENANT understands that any false or misleading statements or omissions may
+  result in criminal and civil actions for fines, penalties, damages, or
+  imprisonment.
+</p>
+{{/include_cdc}}
+
+<br /><br />
+
+<p>
+  Spanish Translation below is provided only for convenience. In the event that
+  the translation does not match the English source, the English version takes
+  precedent.
+</p>
+
+<p>
+  Dueño de Propiedad/Propietario<br />
+  Nombre: {{property_owner}}<br />
+  Domicilio: {{property_manager_address}}<br />
+  Teléfono: {{property_phone}}<br />
+</p>
+
+<p>
+  Inquilino<br />
+  Nombre: {{legal_name}}<br />
+  Domicilio: {{home_address}}<br />
+  Teléfono: {{phone_number}}<br />
+</p>
+
+<p>
+  Este acuerdo de asistencia de alquiler de emergencia (este “acuerdo”) se hace
+  y se establece el día {{date}} (fecha de vigor) por y entre el DUEÑO DE LA
+  PROPIEDAD/PROPIETARIO (“DUEÑO).
+</p>
+
+<p>
+  El dueño e inquilino han entrado en un convenio de alquiler escrito o verbal
+  en el cual el inquilino paga ${{monthly_rent}} por mes de alquiler (“Acuerdo
+  de Alquiler). Esteacuerdo será un apéndice del acuerdo actual entre el DUEÑO e
+  INQUILINO.
+</p>
+
+<p>
+  Para bien y consideración de valor, el dueño está de acuerdo en lo siguiente:
+</p>
+
+<ol>
+  <li>
+    <p>
+      El dueño aceptara pago del LBWF por parte del inquilino por el costo total
+      de alquiler mensual que debe el inquilino para los siguientes meses en el
+      monto total de ${{total_paid}} y en cuanto reciba el pago en un tiempo
+      adecuado de LBWF (como muestra en el párrafo7 de este acuerdo), liberara
+      al inquilino de cualquier obligación al dueño para esta porción del monto
+      debido del alquiler para dichos meses.
+    </p>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <td></td>
+          <th>Mes</th>
+          <th>Debido</th>
+          <th>Cuotas atrasadas</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#unpaid_march}}
+        <tr>
+          <td></td>
+          <td>March</td>
+          <td>${{unpaid_march}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_march}} {{#unpaid_april}}
+        <tr>
+          <td></td>
+          <td>April</td>
+          <td>${{unpaid_april}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_april}} {{#unpaid_may}}
+        <tr>
+          <td></td>
+          <td>May</td>
+          <td>${{unpaid_may}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_may}} {{#unpaid_june}}
+        <tr>
+          <td></td>
+          <td>June</td>
+          <td>${{unpaid_june}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_june}} {{#unpaid_july}}
+        <tr>
+          <td></td>
+          <td>July</td>
+          <td>${{unpaid_july}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_july}} {{#unpaid_august}}
+        <tr>
+          <td></td>
+          <td>August</td>
+          <td>${{unpaid_august}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_august}} {{#unpaid_september}}
+        <tr>
+          <td></td>
+          <td>September</td>
+          <td>${{unpaid_september}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_september}} {{#unpaid_october}}
+        <tr>
+          <td></td>
+          <td>October</td>
+          <td>${{unpaid_october}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_october}} {{#unpaid_november}}
+        <tr>
+          <td></td>
+          <td>November</td>
+          <td>${{unpaid_november}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_november}} {{#unpaid_december}}
+        <tr>
+          <td></td>
+          <td>December</td>
+          <td>${{unpaid_december}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_december}} {{#unpaid_january}}
+        <tr>
+          <td></td>
+          <td>January</td>
+          <td>${{unpaid_january}}</td>
+          <td></td>
+          <td></td>
+        </tr>
+        {{/unpaid_january}}
+
+        <tr>
+          <th>Total debido</th>
+          <td></td>
+          <td>${{total_paid}}</td>
+          <td>${{late_fees_total}}{{^late_fees_total}}0{{/late_fees_total}}</td>
+        </tr>
+        <tr>
+          <th>Pagado por LBWF</th>
+          <td></td>
+          <td>${{total_paid}}</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>Pagado por inquilino</th>
+          <td></td>
+          <td></td>
+          <td>${{tenant_paid}}</td>
+        </tr>
+        <tr>
+          <th>Renunciado por propietario</th>
+          <td></td>
+          <td></td>
+          <td>${{owner_waived}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+  </li>
+
+  <li>
+    <p>
+      El dueño exonerara todos los cargos de retraso en exceso de un total de
+      más de $100 de recargos de retraso que se hubieran acumulado bajo los
+      términos originales del contrato de alquiler entre el DUEÑO e INQUILINO
+      comenzando el primer día que la renta hubiera sido tardía.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      El DUEÑO tomara acción para eliminar cualquier procedimiento actual
+      dedesalojo y/o no comenzara procedimientos de alojo que son o
+      serianbasados en los pagos de alquiler cubierto con este pago o cualquier
+      costoasociado con los pagos no dados o cargos de retraso de alquiler
+      cubierto porestos pagos.Si se ha dado aviso de desalojo, El dueño
+      proveerácomprobante de que terminara cualquier procedimiento actual de
+      desalojo que se entregó previamente del pago.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      El DUEÑO certifica que no ha recibido pago por los pagos de alquiler
+      cubiertos bajo este acuerdo por parte del inquilino o cualquier tercera
+      parte (pedimos que cualquier pago duplicado se nos regrese)
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Si un representante del dueño firma este documento, ellos certifican que
+      están autorizados para firmar por parte del dueño.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Este acuerdo será efectivo en la fecha que la segunda partida ejecuta este
+      acuerdo.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      LBWF emitirá un cheque o transferencia electrónica del pago completo
+      dentro de 10 días de firmar este acuerdo.
+    </p>
+  </li>
+
+  {{#has30DayClause}}
+  <li>
+    <p>
+      Por el mes después que la renta es pagada por LBWF, el dueño está de
+      acuerdo en proveer a el inquilino por lo menos treinta (30) días
+      notificación de incumplimiento por no pago de alquiler o costos antes de
+      dar notificaciónde desalojo.
+    </p>
+  </li>
+  {{/has30DayClause}}
+
+  <li>
+    <p>
+      El inquilino es responsable de hacer los pagos de alquiler de acuerdo al
+      contrato de hoy en adelante.
+    </p>
+  </li>
+</ol>
+
+{{#include_cdc}}
+<p>
+  El Inquilino, bajo pena de perjurio, de conformidad con 28 U.S.C Sección 1746, que lo anterior es verdadero y correcto:
+</p>
+<ul>
+  <li>
+    Inquilino ha hecho los mejores esfuerzos para obtener toda la asistencia governamental disponible para alquiler o vivienda;
+  </li>
+  <li>
+    Inquilino espera no ganar más de $99,000 en ingresos anuales para el Año Calendario 2020 (o no más de $198,000 si presenta una declaración de impuestos conjunta), no estaba obligado a reportar ningún ingreso en 2019 al Servicio de Impuestos Internos de los Estados Unidos, o recibió un Pago de Impacto Económico (cheque de estímulo) de conformidad con la Sección 2201 de la Ley CARES;
+  </li>
+  <li>
+    Inquilino no puede pagar mi alquiler completo o hacer un pago completo de la vivienda debido a la pérdida sustancial de ingresos del hogar, pérdida de horas de trabajo o salarios compensables, despidos o gastos médicos extraordinarios de bolsillo;
+  </li>
+  <li>
+    Inquilino está haciendo los mejores esfuerzos para hacer pagos parciales oportunos que estén tan cerca del pago completo como las circunstancias de la persona puedan permitir, teniendo en cuenta otros gastos no discrecionales;
+  </li>
+  <li>
+    Si el Inquilino desalojado probablemente se quedaría sin hogar, tendría que mudarse a un refugio para personas sin hogar, o la necesidad de mudarse a una nueva residencia compartida por otras personas que viven en lugares cercanos porque Inquilino no tiene otras opciones de vivienda disponibles.
+  </li>
+  <li>
+    Inquilino entiende que Inquilino debe pagar el alquiler o hacer un pago de vivienda, y cumplir con otras obligaciones que puedan tener bajo su contrato de arrendamiento, contrato de arrendamiento o similar. Inquilino entiende además que las tarifas, multas o intereses por no pagar el alquiler o hacer un pago de vivienda a tiempo según lo requerido por su arrendamiento, contrato de arrendamiento o contrato similar todavía pueden ser cobrados o cobrados.
+  </li>
+  <li>
+    Inquilino entiende además que al final de esta parada temporal de los desalojos el 31 de diciembre de 2020, su proveedor de vivienda puede exigir el pago total de todos los pagos no realizados antes y durante el cese temporal y la falta de pago pueden someterlos a desalojo de conformidad con las leyes estatales y locales.
+  </li>
+</ul>
+<p>
+  Inquilino entiende que cualquier declaración u omisión falsa o engañosa puede resultar en acciones penales y civiles por multas, sanciones, daños o penas.
+</p>
+{{/include_cdc}}
+
